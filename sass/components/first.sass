@@ -1,0 +1,286 @@
+body
+  background-color: #000
+.header
+  display: flex
+  align-items: flex-start
+  padding-bottom: 40px
+  &__list
+    display: flex
+    align-items: center
+    width: 100%
+    max-width: 800px
+  &__menuToggle
+    display: block
+    position: relative
+    z-index: 1
+    padding-right: 60px
+    -webkit-user-select: none
+    user-select: none
+    a
+      text-decoration: none
+      color: #232323
+      transition: color 0.3s ease
+      &:hover
+        color: tomato
+    input
+      display: block
+      width: 40px
+      height: 32px
+      position: absolute
+      top: -7px
+      left: -5px
+      cursor: pointer
+      opacity: 0
+      z-index: 2
+      -webkit-touch-callout: none
+    span
+      display: block
+      width: 60px
+      height: 2px
+      margin-bottom: 7px
+      position: relative
+      background: #cdcdcd
+      border-radius: 3px
+      z-index: 1
+      transform-origin: 4px 0px
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease
+
+      &:first-child
+        transform-origin: 0% 0%
+
+      &:nth-last-child(2)
+        transform-origin: 0% 100%
+
+    input:checked ~ span
+      opacity: 1
+      transform: rotate(45deg) translate(-17px, -13px)
+
+      &:nth-last-child(3)
+        opacity: 0
+        transform: rotate(0deg) scale(0.2, 0.2)
+
+      &:nth-last-child(2)
+        transform: rotate(-45deg) translate(0, -1px)
+
+  &__items
+    display: flex
+  &__item
+    font-family: 'MADE Outer Sans'
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 18px
+    padding-right: 40px
+    a
+      color: #F7F5F9
+      transition: .2s
+      &:hover
+        transition: .2s
+        color: #E50012
+    &:last-child
+      padding: 0
+
+  &__infoforbuyer
+    width: 100%
+    max-width: 800px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  &__tel
+    padding-right: 60px
+    a
+      font-family: 'MADE Outer Sans'
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 18px
+      color: #F7F5F9
+      &:hover
+        transition: .2s
+        color: #E50012
+  &__shop-bag
+    padding-right: 40px
+    position: relative
+    &_icon
+      position: absolute
+      top: -10px
+      left: 18px
+      p
+        position: absolute
+        top: 4px
+        left: 7px
+        color: red
+  &__lang
+    display: flex
+    flex-direction: row
+    cursor: pointer
+    &_select
+      font-family: 'MADE Outer Sans'
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 18px
+      color: #F7F5F9
+      &:hover
+        transition: .2s
+        opacity: 0.3
+    &__select_de
+      padding-right: 10px
+
+.rooms
+  display: flex
+  flex-direction: row
+  width: 100%
+  cursor: pointer
+  &__block
+    height: 800px
+    width: 351px
+    background-size:  auto
+    background-repeat: no-repeat
+    position: relative
+    margin-right: 10px
+    background-size: auto
+    box-shadow: inset 0px 0px 110px 0px rgba(0,0,0,0.9)
+    transition: .2s
+    &:last-child
+      margin-right: 0
+    &:hover
+      transition: .2s
+      border: 1px solid red
+      transform: translateY(-20px)
+    &_items
+      // position: absolute
+      // left: 60.27px
+      // bottom: 98.16px
+      p
+        position: absolute
+        left: 60.27px
+        bottom: 98.16px
+        width: 246px
+        height: 72px
+        font-family: MADE Outer Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 36px
+        display: block
+        color: #F7F5F9
+      span
+        position: absolute
+        width: 100%
+        height: 24px
+        left: 60.27px
+        bottom: 53.07px
+        font-family: MADE Outer Sans
+        font-style: normal
+        font-weight: 250
+        font-size: 14px
+        line-height: 24px
+        letter-spacing: 2px
+        color: #F7F5F9
+    &_item
+      &::after
+        content: ''
+        background-image: url("../img/Mask.png")
+        display: block
+        width: 28px
+        height: 28px
+        position: absolute
+        top: -3px
+        right: 110px
+
+    &_da-vinci
+      background-image: url("../img/da-vinci.jpg")
+    &_mission
+      background-image: url("../img/mission.jpg")
+    &_magic
+      background-image: url("../img/magic.jpg")
+    &_unknown
+      background-image: url("../img/unknow.png")
+    &_nun
+      background-image: url("../img/nun.jpg")
+  &__block-sale
+    background-color: red
+    transform: rotate(2deg)
+    display: flex
+    justify-content: space-between
+    padding: 0px 10px 0px 10px
+    margin-top: 50px
+    &_percent
+      font-family: Morganite
+      font-style: normal
+      font-weight: bold
+      font-size: 56px
+      line-height: 56px
+      text-transform: uppercase
+      color: #F7F5F9
+    &_time
+      display: flex
+      flex-direction: column
+      font-family: MADE Outer Sans
+      font-style: normal
+      color: #F7F5F9
+      p
+        font-weight: 250
+        font-size: 14px
+        line-height: 24px
+      span
+        font-weight: 900
+        font-size: 18px
+        line-height: 23px
+// #header__menuToggle
+//   display: block
+//   position: relative
+//   z-index: 1
+//   padding-right: 60px
+//   -webkit-user-select: none
+//   user-select: none
+//
+//   a
+//     text-decoration: none
+//     color: #232323
+//     transition: color 0.3s ease
+//
+//     &:hover
+//       color: tomato
+//
+//   input
+//     display: block
+//     width: 40px
+//     height: 32px
+//     position: absolute
+//     top: -7px
+//     left: -5px
+//     cursor: pointer
+//     opacity: 0
+//     z-index: 2
+//     -webkit-touch-callout: none
+//
+//   span
+//     display: block
+//     width: 60px
+//     height: 2px
+//     margin-bottom: 7px
+//     position: relative
+//     background: #cdcdcd
+//     border-radius: 3px
+//     z-index: 1
+//     transform-origin: 4px 0px
+//     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease
+//
+//     &:first-child
+//       transform-origin: 0% 0%
+//
+//     &:nth-last-child(2)
+//       transform-origin: 0% 100%
+//
+//   input:checked ~ span
+//     opacity: 1
+//     transform: rotate(45deg) translate(-17px, -13px)
+//
+//     &:nth-last-child(3)
+//       opacity: 0
+//       transform: rotate(0deg) scale(0.2, 0.2)
+//
+//     &:nth-last-child(2)
+//       transform: rotate(-45deg) translate(0, -1px)

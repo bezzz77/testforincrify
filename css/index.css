@@ -1,0 +1,758 @@
+@charset "UTF-8";
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* line 8, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 18, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* Sections
+   @mixin ========================================================================= */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 33, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 41, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+article, aside, footer, header, nav, section, figcaption, figure, main {
+  display: block;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 50, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* Text-level semantics
+   @mixin ========================================================================= */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 64, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 74, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 84, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 95, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 103, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 107, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   @mixin ========================================================================= */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 118, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 127, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 136, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 144, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 153, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/**Enable panning and pinch zoom gestures, but disable additional non-standard gestures such as double-tap to zoom. Disabling double-tap to zoom removes the need for browsers to delay the generation of click events when the user taps the screen. */
+/* line 168, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+a, area, button, input, label, select, textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 179, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+button,
+input {
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 189, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 202, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 211, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 226, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 240, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 249, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 258, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 268, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* Scripting
+   @mixin ========================================================================= */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 280, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 288, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+template {
+  display: none;
+}
+
+/* Hidden
+   @mixin ========================================================================= */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 299, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+[hidden] {
+  display: none;
+}
+
+/* Reset
+   @mixin ========================================================================= */
+/* line 306, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+h1, h2, h3, h4, h5, h6, p, blockquote, em, img, i, dl, dt, ol, ul, li, video, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* line 313, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span {
+  outline: none;
+}
+
+/* line 318, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+ul, ol {
+  list-style-type: none;
+}
+
+/* line 322, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+/* line 325, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 331, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/** to remove the rounded in IOS*/
+/* line 338, C:/Users/Коля/Desktop/testforincrify/sass/libs/normalize.sass */
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "MADE Outer Sans";
+  src: url("../fonts/MADE Outer Sans/MADE Outer Sans Bold PERSONAL USE.otf") format("OpenType");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Outer Sans";
+  src: url("../fonts/MADE Outer Sans/MADE Outer Sans Thin PERSONAL USE.otf") format("OpenType");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Morganite";
+  src: url("../fonts/Morganite/Morganite-Bold.ttf") format("TrueType");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 1, C:/Users/Коля/Desktop/testforincrify/sass/partials/_grid.sass */
+.container-xl {
+  width: 100%;
+  min-width: 1920px;
+  height: 100vh;
+  padding: 60px 60px 0 60px;
+  position: relative;
+}
+
+/* line 8, C:/Users/Коля/Desktop/testforincrify/sass/partials/_grid.sass */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 15, C:/Users/Коля/Desktop/testforincrify/sass/partials/_grid.sass */
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* line 2, C:/Users/Коля/Desktop/testforincrify/sass/partials/_uikit.sass */
+.uikit__h1 {
+  color: black;
+}
+
+/* line 4, C:/Users/Коля/Desktop/testforincrify/sass/partials/_uikit.sass */
+.uikit__h2 {
+  color: white;
+}
+
+/* line 1, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+body {
+  background-color: #000;
+}
+
+/* line 3, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+/* line 7, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* line 12, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle {
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding-right: 60px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* line 19, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+/* line 23, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle a:hover {
+  color: tomato;
+}
+
+/* line 25, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+/* line 36, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle span {
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin-bottom: 7px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+/* line 48, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+/* line 51, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* line 54, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-17px, -13px);
+}
+
+/* line 58, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* line 62, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* line 65, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__items {
+  display: flex;
+}
+
+/* line 67, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__item {
+  font-family: 'MADE Outer Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  padding-right: 40px;
+}
+
+/* line 74, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__item a {
+  color: #F7F5F9;
+  transition: .2s;
+}
+
+/* line 77, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__item a:hover {
+  transition: .2s;
+  color: #E50012;
+}
+
+/* line 80, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__item:last-child {
+  padding: 0;
+}
+
+/* line 83, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__infoforbuyer {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* line 89, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__tel {
+  padding-right: 60px;
+}
+
+/* line 91, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__tel a {
+  font-family: 'MADE Outer Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #F7F5F9;
+}
+
+/* line 98, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__tel a:hover {
+  transition: .2s;
+  color: #E50012;
+}
+
+/* line 101, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__shop-bag {
+  padding-right: 40px;
+  position: relative;
+}
+
+/* line 104, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__shop-bag_icon {
+  position: absolute;
+  top: -10px;
+  left: 18px;
+}
+
+/* line 108, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__shop-bag_icon p {
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  color: red;
+}
+
+/* line 113, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__lang {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+/* line 117, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__lang_select {
+  font-family: 'MADE Outer Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #F7F5F9;
+}
+
+/* line 124, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__lang_select:hover {
+  transition: .2s;
+  opacity: 0.3;
+}
+
+/* line 127, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__lang__select_de {
+  padding-right: 10px;
+}
+
+/* line 130, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 135, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block {
+  height: 800px;
+  width: 351px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-right: 10px;
+  background-size: auto;
+  box-shadow: inset 0px 0px 110px 0px rgba(0, 0, 0, 0.9);
+  transition: .2s;
+}
+
+/* line 145, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block:last-child {
+  margin-right: 0;
+}
+
+/* line 147, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block:hover {
+  transition: .2s;
+  border: 1px solid red;
+  transform: translateY(-20px);
+}
+
+/* line 155, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_items p {
+  position: absolute;
+  left: 60.27px;
+  bottom: 98.16px;
+  width: 246px;
+  height: 72px;
+  font-family: MADE Outer Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  display: block;
+  color: #F7F5F9;
+}
+
+/* line 168, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_items span {
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  left: 60.27px;
+  bottom: 53.07px;
+  font-family: MADE Outer Sans;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #F7F5F9;
+}
+
+/* line 182, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_item::after {
+  content: '';
+  background-image: url("../img/Mask.png");
+  display: block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: -3px;
+  right: 110px;
+}
+
+/* line 192, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_da-vinci {
+  background-image: url("../img/da-vinci.jpg");
+}
+
+/* line 194, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_mission {
+  background-image: url("../img/mission.jpg");
+}
+
+/* line 196, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_magic {
+  background-image: url("../img/magic.jpg");
+}
+
+/* line 198, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_unknown {
+  background-image: url("../img/unknow.png");
+}
+
+/* line 200, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_nun {
+  background-image: url("../img/nun.jpg");
+}
+
+/* line 202, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block-sale {
+  background-color: red;
+  transform: rotate(2deg);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+  margin-top: 50px;
+}
+
+/* line 209, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block-sale_percent {
+  font-family: Morganite;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #F7F5F9;
+}
+
+/* line 217, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block-sale_time {
+  display: flex;
+  flex-direction: column;
+  font-family: MADE Outer Sans;
+  font-style: normal;
+  color: #F7F5F9;
+}
+
+/* line 223, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block-sale_time p {
+  font-weight: 250;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* line 227, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block-sale_time span {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/*# sourceMappingURL=index.css.map */

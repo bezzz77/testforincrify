@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/* line 1, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+body {
+  background-color: #000;
+}
+
+/* line 3, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+/* line 7, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* line 12, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle {
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding-right: 60px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* line 19, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+/* line 23, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle a:hover {
+  color: tomato;
+}
+
+/* line 25, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+/* line 36, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle span {
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin-bottom: 7px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+/* line 48, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+/* line 51, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* line 54, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-17px, -13px);
+}
+
+/* line 58, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* line 62, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* line 65, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__items {
+  display: flex;
+}
+
+/* line 67, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__item {
+  font-family: 'MADE Outer Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  padding-right: 40px;
+}
+
+/* line 74, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__item a {
+  color: #F7F5F9;
+  transition: .2s;
+}
+
+/* line 77, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__item a:hover {
+  transition: .2s;
+  color: #E50012;
+}
+
+/* line 80, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__item:last-child {
+  padding: 0;
+}
+
+/* line 83, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__infoforbuyer {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* line 89, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__tel {
+  padding-right: 60px;
+}
+
+/* line 91, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__tel a {
+  font-family: 'MADE Outer Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #F7F5F9;
+}
+
+/* line 98, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__tel a:hover {
+  transition: .2s;
+  color: #E50012;
+}
+
+/* line 101, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__shop-bag {
+  padding-right: 40px;
+  position: relative;
+}
+
+/* line 104, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__shop-bag_icon {
+  position: absolute;
+  top: -10px;
+  left: 18px;
+}
+
+/* line 108, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__shop-bag_icon p {
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  color: red;
+}
+
+/* line 113, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__lang {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+/* line 117, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__lang_select {
+  font-family: 'MADE Outer Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #F7F5F9;
+}
+
+/* line 124, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__lang_select:hover {
+  transition: .2s;
+  opacity: 0.3;
+}
+
+/* line 127, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.header__lang__select_de {
+  padding-right: 10px;
+}
+
+/* line 130, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* line 135, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block {
+  height: 800px;
+  width: 351px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-right: 10px;
+  background-size: auto;
+  box-shadow: inset 0px 0px 110px 0px rgba(0, 0, 0, 0.9);
+  transition: .2s;
+}
+
+/* line 145, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block:last-child {
+  margin-right: 0;
+}
+
+/* line 147, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block:hover {
+  transition: .2s;
+  border: 1px solid red;
+  transform: translateY(-20px);
+}
+
+/* line 155, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_items p {
+  position: absolute;
+  left: 60.27px;
+  bottom: 98.16px;
+  width: 246px;
+  height: 72px;
+  font-family: MADE Outer Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  display: block;
+  color: #F7F5F9;
+}
+
+/* line 168, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_items span {
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  left: 60.27px;
+  bottom: 53.07px;
+  font-family: MADE Outer Sans;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #F7F5F9;
+}
+
+/* line 182, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_item::after {
+  content: '';
+  background-image: url("../img/Mask.png");
+  display: block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: -3px;
+  right: 110px;
+}
+
+/* line 192, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_da-vinci {
+  background-image: url("../img/da-vinci.jpg");
+}
+
+/* line 194, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_mission {
+  background-image: url("../img/mission.jpg");
+}
+
+/* line 196, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_magic {
+  background-image: url("../img/magic.jpg");
+}
+
+/* line 198, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_unknown {
+  background-image: url("../img/unknow.png");
+}
+
+/* line 200, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block_nun {
+  background-image: url("../img/nun.jpg");
+}
+
+/* line 202, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block-sale {
+  background-color: red;
+  transform: rotate(2deg);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+  margin-top: 50px;
+}
+
+/* line 209, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block-sale_percent {
+  font-family: Morganite;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #F7F5F9;
+}
+
+/* line 217, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block-sale_time {
+  display: flex;
+  flex-direction: column;
+  font-family: MADE Outer Sans;
+  font-style: normal;
+  color: #F7F5F9;
+}
+
+/* line 223, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block-sale_time p {
+  font-weight: 250;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* line 227, C:/Users/Коля/Desktop/testforincrify/sass/components/first.sass */
+.rooms__block-sale_time span {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/*# sourceMappingURL=first.css.map */
